@@ -1,5 +1,5 @@
 do
-    local library = loadstring(game:HttpGet('https://gist.github.com/Bi-nz/ac41df5bd5dffb8a285e2751f1a69c95/raw',true))()
+    local library = loadstring(game:HttpGet('https://raw.githubusercontent.com/actz2196/randomshit/main/UiLib.lua',true))()
     local w1 = library:KRNL_0bebcb447a7726(true)
     local wc1 = w1:KRNL_1d7cf31a6a3640('Main')
     --local wc2 = w1:KRNL_1d7cf31a6a3640('Teleports')
