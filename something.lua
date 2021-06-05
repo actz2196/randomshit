@@ -42,7 +42,7 @@ function lib:CreateFolder(window)
 		if open == true then
 			for i,v in pairs(Frame:GetChildren()) do
 				if v.ClassName ~= "UIGridLayout" then
-					lib:IncreaseSize(30)
+					lib:IncreaseSize(window,30)
 					v.Visible = true
 				end
 			end
