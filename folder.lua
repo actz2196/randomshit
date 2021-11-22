@@ -1,6 +1,6 @@
 local lib = {}
 
-function lib.Window(font)
+function lib.Window()
     local ActzLib = Instance.new("ScreenGui")
     local Frame = Instance.new("Frame")
     ActzLib.Name = "ActzLib"
@@ -18,11 +18,11 @@ function lib.Window(font)
     return {
         Button = function(text, callback)
             local TextButton = Instance.new("TextButton")
-            TextButton.Parent = Window
+            TextButton.Parent = self
             TextButton.Parent = text
             TextButton.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
             TextButton.Size = UDim2.new(0, 200, 0, 50)
-            TextButton.Font = Enum.Font[font]
+            TextButton.Font = Enum.Font.Arial
             TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
             TextButton.TextSize = 14.000
             TextButton.MouseButton1Down:Connect(function()
