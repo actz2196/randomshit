@@ -18,7 +18,7 @@ function lib.Window()
     return {
         Button = function(text, callback)
             local TextButton = Instance.new("TextButton")
-            TextButton.Parent = self
+            TextButton.Parent = Frame
             TextButton.Parent = text
             TextButton.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
             TextButton.Size = UDim2.new(0, 200, 0, 50)
