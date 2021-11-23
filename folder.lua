@@ -17,8 +17,6 @@ function lib.Window()
     UIGridLayout.CellSize = UDim2.new(1, 0, 0, 20)
     return {
         Button = function(textz, callback)
-            local success ,err = pcall(function()
-                local bruh = textz
                 local TextButton = Instance.new("TextButton")
                 TextButton.Parent = Frame
                 TextButton.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
@@ -26,12 +24,10 @@ function lib.Window()
                 TextButton.Font = Enum.Font.Arial
                 TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
                 TextButton.TextSize = 14.000
-                TextButton.Text = bruh
+                TextButton.Text = textz
                 TextButton.MouseButton1Click:Connect(function()
                     pcall(callback())
                 end)
-            end)
-            if success then else print(err) end
         end
     }
 end
