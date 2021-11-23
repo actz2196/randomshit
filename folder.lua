@@ -52,7 +52,7 @@ function lib.Window()
             local FolderFrameOpen = false
             FolderFrame.Name = "FolderFrame"
             FolderFrame.Parent = Folder
-            FolderFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+            FolderFrame.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
             FolderFrame.BorderSizePixel = 0
             FolderFrame.Position = UDim2.new(0, 0, 1, 0)
             FolderFrame.Size = UDim2.new(0, 136, 0, 0)
