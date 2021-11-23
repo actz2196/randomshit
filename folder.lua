@@ -1,5 +1,5 @@
 local lib = {
-    FolderFrameVal = 0
+    FolderFrameVal = 25
 }
 
 function lib:increaseFolder()
@@ -47,7 +47,6 @@ function lib.Window()
             Folder.Text = text
             Folder.TextColor3 = Color3.fromRGB(255, 255, 255)
             Folder.TextSize = 14.000
-            FolderFrameVal = 25
             local FolderFrameOpen = false
             FolderFrame.Name = "FolderFrame"
             FolderFrame.Parent = Folder
@@ -62,7 +61,7 @@ function lib.Window()
             Folder.MouseButton1Click:Connect(function()
                     FolderFrameOpen = not FolderFrameOpen
                     if FolderFrameOpen then
-                        FolderFrame.Size = UDim2.new(0,136,0,FolderFrameVal)
+                        FolderFrame.Size = UDim2.new(0,136,0,lib.FolderFrameVal)
                         for i,v in pairs(FolderFrame:GetChildren()) do
                             if v.ClassName ~= "UIGridLayout" then
                                 v.Visible = false
