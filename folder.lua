@@ -26,7 +26,7 @@ function lib.Window()
             TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
             TextButton.TextSize = 14.000
             TextButton.MouseButton1Down:Connect(function()
-                callback()
+                pcall(callback())
             end)
         end
     }
