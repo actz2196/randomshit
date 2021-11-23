@@ -42,6 +42,9 @@ function lib.Window()
             Folder.TextColor3 = Color3.fromRGB(255, 255, 255)
             Folder.TextSize = 14.000
             FolderFrameVal = 25
+            function increaseFolder()
+               FolderFrameVal = FolderFrameVal + 20 
+            end
             FolderFrameOpen = false
             FolderFrame.Name = "FolderFrame"
             FolderFrame.Parent = Folder
@@ -74,7 +77,8 @@ function lib.Window()
             return { 
                 Button = function(textz,callback)
                      local TextButton = Instance.new("TextButton")
-                    TextButton.Parent = Frame
+                    TextButton.Parent = FolderFrame
+                    increaseFolder()
                     TextButton.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
                     TextButton.Size = UDim2.new(0, 200, 0, 50)
                     TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
