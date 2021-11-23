@@ -62,14 +62,14 @@ function lib.Window()
             Folder.MouseButton1Click:Connect(function()
                     FolderFrameOpen = not FolderFrameOpen
                     if FolderFrameOpen then
-                        FolderFrame.Size = UDim2.new(0,136,0,0)
+                        FolderFrame.Size = UDim2.new(0,136,0,FolderFrameVal)
                         for i,v in pairs(FolderFrame:GetChildren()) do
                             if v.ClassName ~= "UIGridLayout" then
                                 v.Visible = true
                             end
                         end
                     else
-                        FolderFrame.Size = UDim2.new(0,136,0,FolderFrameVal)
+                        FolderFrame.Size = UDim2.new(0,136,0,0)                        
                         for i,v in pairs(FolderFrame:GetChildren()) do
                             if v.ClassName ~= "UIGridLayout" then
                                 v.Visible = false
