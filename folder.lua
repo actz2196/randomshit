@@ -25,7 +25,7 @@ function lib.Window()
             TextButton.Font = Enum.Font.Arial
             TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
             TextButton.TextSize = 14.000
-            TextButton.MouseButton1Down:Connect(function()
+            TextButton.MouseButton1Click:Connect(function()
                 pcall(callback())
             end)
         end
