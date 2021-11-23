@@ -20,7 +20,7 @@ function lib.Window()
             print(text)
             local TextButton = Instance.new("TextButton")
             TextButton.Parent = Frame
-            TextButton.Parent = text
+            TextButton.Parent = tostring(text)
             TextButton.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
             TextButton.Size = UDim2.new(0, 200, 0, 50)
             TextButton.Font = Enum.Font.Arial
