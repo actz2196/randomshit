@@ -83,6 +83,7 @@ function lib.Window()
                     TextButton.Size = UDim2.new(0, 200, 0, 50)
                     TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
                     TextButton.TextSize = 14.000
+                    TextButton.Visible = false
                     TextButton.Text = textz
                     TextButton.MouseButton1Click:Connect(function()
                         pcall(callback())
