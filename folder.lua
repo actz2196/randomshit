@@ -16,16 +16,15 @@ function lib.Window()
     UIGridLayout.CellPadding = UDim2.new(0, 0, 0, 0)
     UIGridLayout.CellSize = UDim2.new(1, 0, 0, 20)
     return {
-        Button = function(text, callback)
-            print(text)
+        Button = function(textz, callback)
             local TextButton = Instance.new("TextButton")
             TextButton.Parent = Frame
-            TextButton.Text = text
             TextButton.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
             TextButton.Size = UDim2.new(0, 200, 0, 50)
             TextButton.Font = Enum.Font.Arial
             TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
             TextButton.TextSize = 14.000
+            TextButton.Text = textz
             TextButton.MouseButton1Click:Connect(function()
                 pcall(callback())
             end)
