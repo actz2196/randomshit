@@ -17,6 +17,7 @@ function lib.Window()
     UIGridLayout.CellSize = UDim2.new(1, 0, 0, 20)
     return {
         Button = function(text, callback)
+            print(text)
             local TextButton = Instance.new("TextButton")
             TextButton.Parent = Frame
             TextButton.Parent = text
