@@ -64,14 +64,14 @@ function lib.Window()
                         FolderFrame.Size = UDim2.new(0,136,0,lib.FolderFrameVal)
                         for i,v in pairs(FolderFrame:GetChildren()) do
                             if v.ClassName ~= "UIGridLayout" then
-                                v.Visible = false
+                                v.Visible = true
                             end
                         end
                     else
                         FolderFrame.Size = UDim2.new(0,136,0,0)                        
                         for i,v in pairs(FolderFrame:GetChildren()) do
                             if v.ClassName ~= "UIGridLayout" then
-                                v.Visible = true
+                                v.Visible = false
                             end
                         end
                     end
