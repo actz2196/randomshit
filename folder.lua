@@ -38,7 +38,7 @@ function lib.Window()
             local UIGridLayout = Instance.new("UIGridLayout")
             local FolderFrameVal = Instance.new("IntValue")
             Folder.Name = "Folder"
-            Folder.Parent = game.StarterGui.ActzLib.Frame
+            Folder.Parent = Frame
             Folder.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
             Folder.Size = UDim2.new(0, 200, 0, 50)
             Folder.Font = Enum.Font.SourceSans
