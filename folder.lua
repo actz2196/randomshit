@@ -1,5 +1,9 @@
 local lib = {}
 
+function increaseFolder()
+    FolderFrameVal = FolderFrameVal + 20 
+end
+
 function lib.Window()
     local ActzLib = Instance.new("ScreenGui")
     local Frame = Instance.new("Frame")
@@ -42,9 +46,6 @@ function lib.Window()
             Folder.TextColor3 = Color3.fromRGB(255, 255, 255)
             Folder.TextSize = 14.000
             FolderFrameVal = 25
-            function increaseFolder()
-               FolderFrameVal = FolderFrameVal + 20 
-            end
             FolderFrameOpen = false
             FolderFrame.Name = "FolderFrame"
             FolderFrame.Parent = Folder
