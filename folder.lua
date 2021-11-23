@@ -29,6 +29,7 @@ function lib.Window()
                 TextButton.Size = UDim2.new(0, 200, 0, 50)
                 TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
                 TextButton.TextSize = 14.000
+                TextButton.TextScaled = true
                 TextButton.Text = textz
                 TextButton.MouseButton1Click:Connect(function()
                     pcall(callback)
@@ -45,6 +46,7 @@ function lib.Window()
             Folder.Size = UDim2.new(0, 200, 0, 50)
             Folder.Font = Enum.Font.SourceSans
             Folder.Text = text
+            Folder.TextScaled = true
             Folder.TextColor3 = Color3.fromRGB(255, 255, 255)
             Folder.TextSize = 14.000
             local FolderFrameOpen = false
@@ -81,10 +83,11 @@ function lib.Window()
                      local TextButton = Instance.new("TextButton")
                     TextButton.Parent = FolderFrame
                     lib:increaseFolder()
-                    TextButton.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+                    TextButton.BackgroundColor3 = Color3.fromRGB(64, 64, 64)
                     TextButton.Size = UDim2.new(0, 200, 0, 50)
                     TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
                     TextButton.TextSize = 14.000
+                    TextButton.TextScaled = true
                     TextButton.Visible = false
                     TextButton.Text = textz
                     TextButton.MouseButton1Click:Connect(function()
